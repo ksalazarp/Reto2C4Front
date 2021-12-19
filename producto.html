@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/styleUser.css">
+    <title>Registro de Productos</title>
+</head>
+<body>
+    
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <!-- LOGO OFICIAL EN MOVIENTO-->
+                        <img src="/img/Logo.png" alt=""/>
+                        <h3>Bienvenido al portal de administrador</h3>
+                        <a  style="text-decoration:none" href="admin.html"  class="myButton">Volver</a>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">--Registro de Productos--</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" placeholder="Referencia *" name="form-control" id="reference" required/>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Categoria *" name="form-control" id="category" required/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="form-control" placeholder="Descripción *"  id="description" required/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="form-control" name="availability" id="availability" required>
+                                                <option class="hidden"  selected disabled>Selecciona Disponibilidad</option>
+                                                <option value="true" id="availability">Disponible</option>
+                                                <option value="false" id="availability">No Disponible</option>
+                                            
+                                            </select>
+                                        </div>
+
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <div class="form-group">
+                                            <input type=number min="0" step=0.01 class="form-control" name="form-control" placeholder="Precio *" id="price" required/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="number" min="0" class="form-control" name="form-control"  placeholder="Cantidad *" id="quantity" required/>
+                                            
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="form-control" placeholder="Fotografia *" id="photography" required/>
+                    
+                                        </div>
+    
+                                        <div>
+                                            <button  class='btn btn-primary'  onclick="guardarProducto()" >Registar </button>
+                            
+                                        </div>
+
+                                        <br>
+
+                                        <div>
+                                            <button  class='btn btn-primary'  onclick="traerProductos()">Listar productos </button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- MUESTRA TABLA CON LOS PRODCUTOS REGISTRADOS AL PRESIONAR LISTAR PRODUCTOS-->
+                <div id="resultado2">
+                </div>
+
+            </div>
+            <script src="js/product.js"></script>
+</body>
+</html>

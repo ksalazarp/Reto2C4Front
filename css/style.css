@@ -1,0 +1,59 @@
+.container-fluid{
+
+    font-family: 'Roboto';
+    background-image: url('D:/Documentos/GitHub/Reto2C4Front/img/logo.jpg');/* color de fondo negro que esta debaja de la imagen de chocolates*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+/* background: #fefdd1;*/
+    
+}
+
+
+/*.infinity-image-container{
+    background: url('/img/fondo.png') center no-repeat; /*imagen con los chocolates
+    background-size: cover;
+    opacity: 0.9;
+    height: 100vh;
+}
+*/
+.infinity-form-container{
+  /*   background: #00030a; /* color de fondo lado derecho*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infinity-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.infinity-form h4 {
+    font-weight: bold;
+    color: white; /* color palabra inicio de sesion*/
+}
+
+.infinity-form .form-input {
+    position: relative;
+}
+
+.infinity-form .form-input input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgb(247, 248, 250); /* color de las cajas de imputs emcial y contraseña*/
+    padding-left: 45px;
+}
+
+

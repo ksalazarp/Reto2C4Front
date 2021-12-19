@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Willy Wonka </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row ">
+			<!-- CONTENEDOR DE IMAGEN COMIENZO -->
+			<div class="col-lg-6 col-md-6 d-none d-md-block infinity-image-container">
+			<!--	<img src="img/Logo.jpg">-->
+			
+			</div>
+			
+			<!-- FIN DEL CONTENEDOR DE IMAGEN-->
+
+			<!-- FORMULARIO DE CONTENEDOR-->
+			<div class="col-lg-6 col-md-6 infinity-form-container">					
+				<div class="col-lg-9 col-md-12 col-sm-8 col-xs-12 infinity-form">
+					<!-- Logo -->
+					<div class="text-center mb-3 mt-5">
+						<img src="img/iconlogin.png" width="200px">
+					</div>
+					<div class="text-center mb-4">
+				    <h4>Inicio de  Sesión</h4>
+				  </div>
+					<!-- Formulario -->
+					<form class="px-3">
+						<!-- cajas de imputs-->
+
+						<div class="form-input">
+							<span><i class="fa fa-lock"></i></span>
+							<input type="email" name="" placeholder="Email " id="email" required>
+						</div>
+						
+						<div class="form-input">
+							<span><i class="fa fa-lock"></i></span>
+							<input type="password" name="" placeholder="Contraseña" id="clave" required>
+						</div>
+						<!-- Boton registrar-->
+                        <div class="input-group">
+                            <input type="button" class="form-input" value="Iniciar Sesión" onclick="login();">
+                        </div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- Boton registrar-->
+    <script src="js/form.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/styleUser.css">
+    <title>Willy Wonka</title>
+</head>
+
+<body>
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <!-- LOGO OFICIAL EN MOVIMIENTO-->
+                <img src="../img/Logo.png" alt="" />
+                <h3>Bienvenido al portal de Coordinador</h3>
+                <a class="myButton" href="admin.html" style="text-decoration:none">Volver</a>
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Perfil Coordinador</h3><br><br><br><br>
+
+
+                        <div class="container pt-4 pb-4 w-100">
+                            <table class="table table-dark table-striped w-90" border="1">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Identificacion</th>
+                                        <th class="text-center">Nombres</th>
+                                        <th class="text-center">E-mail</th>
+                                        <th class="text-center">Perfil</th>
+                                        <th class="text-center">Zona</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="table-body-user">
+                                    <tr>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <h3 class="register-heading">Ordenes Asesores Comerciales</h3><br><br><br><br>
+
+                        <div class="container pt-4 pb-4 w-100">
+                            <table class="table table-dark table-striped w-90" border="1" id="tablaid" style="display:none">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Identificacion</th>
+                                        <th class="text-center">Nombres</th>
+                                        <th class="text-center">E-mail</th>
+                                        <th class="text-center">Fecha</th>
+                                        <th class="text-center">No. Pedido</th>
+                                        <th class="text-center">Estado</th>
+                                        <th class="text-center">Pedido</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="table-body-orders">
+                                    <tr>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                        <td class="text-center">Sin info</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <br>
+
+
+                        </div>
+
+                        
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <br>
+        <!-- MUESTRA TABLA CON LOS USUARIOS REGISTRADOS AL PRESIONAR LISTAR USUARIOS-->
+        <div id="resultado1">
+        </div>
+
+    </div>
+
+    </div>
+    <script src="js/user.js"></script>
+</body>
+
+</html>
